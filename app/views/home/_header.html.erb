@@ -1,9 +1,10 @@
 <nav class="navbar bg-light">
   <div class="container">
-    <a class="navbar-brand">Navbar</a>
-    <ul class="nav navbar-nav navbar-right ">
-      <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About Me", home_about_path%></li>
-    </ul>
+    <a class="navbar-brand">Pinterested</a>
+    <ul class="nav justify-content-end ">
+      <li><%= link_to "Home", root_path, class: "nav-link" %></li>
+        <li><%= link_to "About Me", home_about_path, class: "nav-link" %></li>
+     <li>    <%= link_to "Login", new_user_session_path, class: "nav-link" %></li>
+   <li>  <%= link_to "Join", new_user_registration_path, class: "nav-link" %></li>
   </div>
 </nav>
